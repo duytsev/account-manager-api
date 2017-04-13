@@ -37,12 +37,6 @@ public class AccountService {
 		return acc;
 	}
 
-	public void deleteAccountById(Long id) {
-		Account acc = accRepository.findOne(id);
-		checkAccount(id, acc);
-		accRepository.delete(acc);
-	}
-
 	public List<Account> getAllAccounts() {
 		return accRepository.findAll();
 	}
