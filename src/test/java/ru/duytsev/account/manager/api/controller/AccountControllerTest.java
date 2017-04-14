@@ -64,7 +64,7 @@ public class AccountControllerTest extends BaseControllerTest {
 
 	@Test
 	public void testGetById() throws Exception {
-		mockMvc.perform(get("/api/account/1")
+		mockMvc.perform(get("/api/accounts/1")
 				.contentType(MediaType.APPLICATION_JSON))
 				.andExpect(status().isOk()).andExpect(content()
 				.json("{'id': 1, 'balance': 0}"));
