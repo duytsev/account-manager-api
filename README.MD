@@ -28,7 +28,7 @@ mvn spring-boot:run
 
 ### Examples
 
-```json
+```javascript
 POST api/accounts
 {  
   "balance": 500
