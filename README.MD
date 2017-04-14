@@ -1,5 +1,18 @@
 Account Manager API
 
+
+Run app on port 8080
+
+As packaged application:
+```
+java -jar target/account-manager-api-0.0.1-SNAPSHOT.jar
+```
+
+Using the Maven plugin:
+```
+mvn spring-boot:run
+```
+
 ### Endpoints
 
 | Method | Url | Decription |
