@@ -131,7 +131,7 @@ public class AccountTransactionControllerTest extends BaseControllerTest {
 	}
 
 	private void checkBalance(Account account, Double balance) throws Exception {
-		mockMvc.perform(get("/api/account/" + account.getId())
+		mockMvc.perform(get("/api/accounts/" + account.getId())
 				.contentType(MediaType.APPLICATION_JSON))
 				.andExpect(status().isOk())
 				.andExpect(jsonPath("$.id", isLong(account.getId())))
