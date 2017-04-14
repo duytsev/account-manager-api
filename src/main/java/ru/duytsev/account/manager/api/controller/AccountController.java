@@ -29,7 +29,7 @@ public class AccountController {
 		this.mapper = mapper;
 	}
 
-	@RequestMapping(path = "/account/{accountId}", method = RequestMethod.GET)
+	@RequestMapping(path = "/accounts/{accountId}", method = RequestMethod.GET)
 	public ResponseEntity<?> getAccount(@PathVariable("accountId") Long accountId) {
 		Account account = accService.getAccountById(accountId);
 		return ResponseEntity.ok().body(mapper.map(account, AccountTO.class));
