@@ -17,10 +17,34 @@ mvn spring-boot:run
 
 | Method | Url | Decription |
 | ------ | --- | ---------- |
-| GET    |/accounts  | list all accounts |
-| GET    |/account/{id}  | get account by id |
-| POST    |/accounts  | create account |
-| GET    |/transfers  | list all transfers(deposits and withdrawals are part of transfer) |
-| POST    |/transfers  | create transfer |
-| POST    |/deposits  | create deposit |
-| POST    |/withdrawals  | create withdrawal |
+| GET    |/api/accounts  | list all accounts |
+| GET    |/api/account/{id}  | get account by id |
+| POST    |/api/accounts  | create account |
+| GET    |/api/transfers  | list all transfers(deposits and withdrawals are part of transfer) |
+| POST    |/api/transfers  | create transfer |
+| POST    |/api/deposits  | create deposit |
+| POST    |/api/withdrawals  | create withdrawal |
+
+
+### Examples
+
+```json
+POST api/accounts
+{  
+  "balance": 500
+}
+
+POST api/transfers
+{    
+  "fromAccountId": 1,  
+  "toAccountId": 2,
+  "amount": 100.1
+}
+
+POST api/deposits
+POST api/withdrawals
+{      
+  "accountId": 3,    
+  "amount": 200.12
+}
+```
