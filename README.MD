@@ -18,7 +18,7 @@ mvn spring-boot:run
 | Method | Url | Decription |
 | ------ | --- | ---------- |
 | GET    |/api/accounts  | list all accounts |
-| GET    |/api/account/{id}  | get account by id |
+| GET    |/api/accounts/{id}  | get account by id |
 | POST    |/api/accounts  | create account |
 | GET    |/api/transfers  | list all transfers(deposits and withdrawals are part of transfer) |
 | POST    |/api/transfers  | create transfer |
